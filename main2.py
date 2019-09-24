@@ -55,6 +55,16 @@ class MyGame(arcade.Window):
         self.emote_sprite.center_y = 360
         self.emote_list.append(self.emote_sprite)
         
+        self.animal_sprite = arcade.Sprite("assets/hippo.png", 0.5)
+        self.animal_sprite.center_x = 500
+        self.animal_sprite.center_y = 300
+        self.animal_list.append(self.animal_sprite)
+
+        self.emote_sprite = Emote()
+        self.emote_sprite.center_x = 500
+        self.emote_sprite.center_y = 360
+        self.emote_list.append(self.emote_sprite)
+
 
     def on_draw(self):
         arcade.start_render()
